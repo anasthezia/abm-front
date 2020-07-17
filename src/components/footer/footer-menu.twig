@@ -1,0 +1,29 @@
+{% set data = [
+   {
+       title: "О компании",
+       items: ["Новости", "Вакансии", "О компании", "Доставка", "Контакты"]
+    }, 
+   {
+       title: "Инстраукции", 
+       items: ["Вопросы и ответы", "Ответы", "Статьи", "Инструкции"]
+    },
+    {
+       title: "Услуги", 
+       items: ["Сервисное обслуживание", "Лизинг", "Трейд-ин", "Обучение"]
+    }]
+%}
+
+
+<ul class="footer-menu"> 
+    {% for group in data  %}
+    <li class="footer-menu__group col-md-4">
+        <h3 class="footer-menu__group-title h3">{{group.title}}</h3>
+        <ul class="footer-menu__items"> 
+            {% for item in group.items  %}
+            <li class="footer-menu__item"><a href="#">{{item}}</a></li>
+            {% endfor %}
+        </ul>
+
+    </li>
+    {% endfor %}
+</ul>

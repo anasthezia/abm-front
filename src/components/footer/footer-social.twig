@@ -1,0 +1,34 @@
+{% set data = [
+   {
+       title: "facebook",
+       utl: "#",
+       imageUrl: "src/static/images/icons/icon-facebook.svg",
+    }, 
+   {
+       title: "Instagramm", 
+        utl: "#",
+       imageUrl: "src/static/images/icons/icon-instagram.svg",
+    },
+    {
+       title: "twitter", 
+        utl: "#",
+       imageUrl: "src/static/images/icons/icon-twitter.svg",
+    },
+    {
+       title: "Youtube", 
+        utl: "#",
+       imageUrl: "src/static/images/icons/icon-youtube.svg",
+    }
+    ]
+%}
+
+
+<ul class="footer-social"> 
+    {% for item in data  %}
+    <li class="footer-social__item">
+        <a  class="footer-social__link" href="{{item.url}}">
+            <img class="footer-social__img" src="{{item.imageUrl}}" alt="{{item.title}}"/>
+        </a>
+    </li>
+    {% endfor %}
+</ul>

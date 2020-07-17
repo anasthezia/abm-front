@@ -1,0 +1,57 @@
+{% set data = [
+    {
+        title: "Бонусная программа",
+        description: "Накопительная система скидок до 10%",
+        imageUrl: "src/static/images/advantages/img-1.svg"
+    },
+        {
+        title: "Всегда в наличии",
+        description: "Более 1000 артикулов всегда готовы к отгрузке",
+        imageUrl: "src/static/images/advantages/img-2.svg"
+    },
+        {
+        title: "Короткие сроки отгрузки",
+        description: "Отгрузка товаров в течение 1-3 дней",
+        imageUrl: "src/static/images/advantages/img-3.svg"
+    },
+        {
+        title: "Единое ценообразование",
+        description: "Бесплатная отгрузка в любой регион РФ",
+        imageUrl: "src/static/images/advantages/img-4.svg"
+    },
+        {
+        title: "Уникальность",
+        description: "Единственный в отрасли полноценный интернет-магазин",
+        imageUrl: "src/static/images/advantages/img-5.svg"
+    },
+        {
+        title: "Онлайн консультации",
+        description: "Профессиональная техническая поддержка",
+        imageUrl: "src/static/images/advantages/img-6.svg"
+    },
+        {
+        title: "Экономия времени",
+        description: "Печатная форма счёта без обращений в офис",
+        imageUrl: "src/static/images/advantages/img-7.svg"
+        },
+        {
+        title: "Круглосуточное оформление",
+        description: "Заказывайте в удобное для вас время",
+        imageUrl: "src/static/images/advantages/img-8.svg"
+    }
+]
+
+%}
+
+<div class="advantages container">
+    <ul class="advantages__list row"> 
+    {% for item in data %}
+        <li class="advantages__item col-lg-3 col-6">
+            <img class="advantages__img" src="{{item.imageUrl}}" alt="{{item.title}}"/>
+            <p class="advantages__item-title">{{item.title}}</p>
+            <p class="advantages__item-description">{{item.description}}</p>
+        </li>
+    {% endfor %}
+    </ul>
+</div>
+<script src="./advantages.js"></script>

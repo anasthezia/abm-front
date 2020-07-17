@@ -1,0 +1,43 @@
+@import '../common/styles/vars.scss';
+.footer {
+    background: $blue-dark;
+    color: $grey-light;
+    font-size: 1rem;
+}
+
+.footer-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    &__group {}
+    &__group-title {
+        color: #ffffff;
+        font-weight: 600;
+        font-size: 1.1rem;
+        line-height: 1.5;
+    }
+    &__items {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+    &__item {
+        font-size: 1rem;
+        opacity: .7;
+        font-weight: 400;
+        line-height: 1.6;
+        a {
+            color: inherit;
+            text-decoration: none;
+        }
+    }
+}
+
+.footer-social {
+    &__item:not(:last-child) {
+        margin-right: 18px;
+    }
+}

@@ -1,0 +1,24 @@
+.advantages {
+    &__item {
+        margin-bottom: 72px;
+    }
+    &__item-title {
+        font-size: 1.2rem;
+        font-weight: 600;
+        padding: 0;
+        margin-bottom: 8px;
+        margin-top: 0;
+    }
+    &__item-description {
+        font-size: 1rem;
+        font-weight: 400;
+        padding: 0;
+        margin: 0;
+    }
+    &__img {
+        height: 80px;
+        width: 80px;
+        object-fit: fill;
+        margin-bottom: 20px;
+    }
+}

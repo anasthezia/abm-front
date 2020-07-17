@@ -1,0 +1,23 @@
+@import "/node_modules/bootstrap-4-grid/scss/grid.scss";
+@import "./typography";
+@import "./vars";
+html,
+body {
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    color: $blue-dark;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    li {
+        display: inline-block;
+        margin: 0;
+        padding: 0;
+    }
+}
